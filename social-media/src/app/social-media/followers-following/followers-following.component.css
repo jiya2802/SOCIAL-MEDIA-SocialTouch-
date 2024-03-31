@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.app-side,
+.followers-container {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.app-side {
+  float: left; /* Float the sidebar to the left */
+}
+
+.followers-container {
+  float: right; /* Float the followers container to the right */
+}
+
+.app-side,
+.followers-container {
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.follower-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.follower-list li {
+  margin-bottom: 5px;
+}

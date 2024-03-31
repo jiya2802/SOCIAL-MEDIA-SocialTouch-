@@ -1,0 +1,11 @@
+<app-nav></app-nav>
+<div class="container">
+    <app-side></app-side>
+    <div class="followers-container">
+        <button (click)="showFollowers()">Followers</button>
+        <button (click)="showFollowing()">Following</button>
+        <ul *ngIf="followers" class="follower-list">
+            <li *ngFor="let follower of followers">{{ follower.user_name }}</li>
+        </ul>
+    </div>
+</div>
